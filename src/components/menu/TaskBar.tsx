@@ -183,14 +183,14 @@ function TaskBar(props: TaskBarProps) {
                         iconBackgroundColor: 'blue',
                         icon: (
                             <CogIcon
-                                className="h-6 w-6 text-blue-600"
+                                className="h-6 w-6 text-gray-600"
                                 aria-hidden="true"
                             />
                         ),
                         tabs: {
                             switchName: 'settings_tab',
                             colorMap: {
-                                Appearance: 'blue',
+                                Appearance: 'gray',
                                 Advanced: 'gray',
                             },
                             tabs: [
