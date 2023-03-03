@@ -67,10 +67,10 @@ function TaskBar(props: TaskBarProps) {
             <MiniButton
                 icon={InformationCircleIcon}
                 color="purple"
-                display="About"
+                display="Sobre"
                 action={() => {
                     props.alert({
-                        title: 'Plan Northwestern - Teste Planning',
+                        title: 'Teste Planning SAPU',
                         customSubtitle: (
                             <p className="text-md font-light text-gray-500 dark:text-gray-400">
                                 version {props.version} by{' '}
@@ -80,61 +80,61 @@ function TaskBar(props: TaskBarProps) {
                                     target="_blank"
                                     rel="noreferrer"
                                 >
-                                    Dilan N
+                                    Desenvolvido Originalmente por Dilan N
                                 </a>
                             </p>
                         ),
                         message:
-                            'An easy and organized way to plan out your classes at Northwestern. Data is all saved in the URL, so save the link to your plan to access it later or share with friends.',
-                        confirmButton: 'View on GitHub',
-                        confirmButtonColor: 'purple',
-                        cancelButton: 'Close',
-                        iconBackgroundColor: 'purple',
+                            'Uma maneira fácil e organizada de planejar suas aulas na Northwestern. Os dados ficam todos salvos na URL, então salve o link no seu plano para acessar depois ou compartilhe com amigos.',
+                        confirmButton: 'Ver no GitHub',
+                        confirmButtonColor: 'blue',
+                        cancelButton: 'Fechar',
+                        iconBackgroundColor: 'blue',
                         icon: (
                             <InformationCircleIcon
-                                className="h-6 w-6 text-purple-600"
+                                className="h-6 w-6 text-blue-600"
                                 aria-hidden="true"
                             />
                         ),
                         action: () => {
                             window.open(
-                                'https://github.com/dilanx/plan-northwestern',
+                                'https://github.com/faelsriegel/test_planning/',
                                 '_blank'
                             );
                         },
                         options: [
                             {
                                 name: 'about_change_log',
-                                title: `What's new?`,
-                                description: `Check out what changes have been made in the latest update.`,
-                                buttonTextOn: `View the change log`,
+                                title: `O que há de novo?`,
+                                description: `Confira quais mudanças foram feitas na última atualização.`,
+                                buttonTextOn: `Exibir o log de alterações`,
                                 singleAction: () => {
                                     window.open(
-                                        'https://github.com/dilanx/plan-northwestern/blob/main/CHANGELOG.md',
+                                        'https://github.com/faelsriegel/test_planning/blob/main/CHANGELOG.md',
                                         '_blank'
                                     );
                                 },
                             },
                             {
                                 name: 'about_coming_soon',
-                                title: 'Coming soon',
-                                description: `Check out what's been requested and what I'm working on on the GitHub issues page. Check this out before you send feedback in case someone else has already requested it.`,
-                                buttonTextOn: `See what's coming`,
+                                title: 'Em breve',
+                                description: `Confira o que foi solicitado e no que estou trabalhando na página de problemas do GitHub. Verifique isso antes de enviar feedback, caso alguém já o tenha solicitado.`,
+                                buttonTextOn: `Veja o que está por vir`,
                                 singleAction: () => {
                                     window.open(
-                                        'https://github.com/dilanx/plan-northwestern/issues?q=',
+                                        'https://github.com/faelsriegel/test_planning/issues?q=',
                                         '_blank'
                                     );
                                 },
                             },
                             {
                                 name: 'about_feedback',
-                                title: 'Share your thoughts!',
-                                description: `Find any bugs, notice any errors in course data, or have any suggestions? Let me know! I'm always interested in making the site better.`,
-                                buttonTextOn: 'Leave feedback',
+                                title: 'Compartilhe sua Opinião!',
+                                description: `Encontre algum bug, observe algum erro nos dados do curso ou tenha alguma sugestão? Avise! Estou sempre interessado em tornar o site melhor.`,
+                                buttonTextOn: 'Deixar feedback',
                                 singleAction: () => {
                                     window.open(
-                                        'https://github.com/dilanx/plan-northwestern/blob/main/FEEDBACK.md',
+                                        'https://github.com/faelsriegel/test_planning/blob/main/FEEDBACK.md',
                                         '_blank'
                                     );
                                 },
@@ -146,15 +146,15 @@ function TaskBar(props: TaskBarProps) {
             <MiniButton
                 icon={ExternalLinkIcon}
                 color="green"
-                display="Share"
+                display="Compartilhar"
                 action={() => {
                     props.alert({
                         title: 'Ready to share!',
                         message:
-                            'All of your plan data is stored in the URL. When you make changes to your plan, the URL is updated to reflect those changes. Save it somewhere, or share with a friend!',
-                        confirmButton: 'Copy to clipboard',
+                            'Todos os dados do seu plano são armazenados na URL. Quando você faz alterações em seu plano, a URL é atualizada para refletir essas alterações. Salve em algum lugar ou compartilhe com um amigo!',
+                        confirmButton: 'Copiar para área de transferência',
                         confirmButtonColor: 'emerald',
-                        cancelButton: 'Close',
+                        cancelButton: 'Fechar',
                         iconBackgroundColor: 'emerald',
                         icon: (
                             <ExternalLinkIcon
@@ -165,37 +165,37 @@ function TaskBar(props: TaskBarProps) {
                         textView: window.location.href,
                         action: () => {
                             navigator.clipboard.writeText(window.location.href);
-                            toast.success('URL copied to clipboard');
+                            toast.success('URL copiado para a área de transferência');
                         },
                     });
                 }}
             />
             <MiniButton
                 icon={CogIcon}
-                color="yellow"
-                display="Settings"
+                color="green"
+                display="Configurações"
                 action={() => {
                     props.alert({
                         title: 'Configurações',
                         message: `Personalize sua experiência no SAPU! Essas configurações são salvas em seu navegador e não na URL.`,
                         confirmButton: 'Fechar',
-                        confirmButtonColor: 'yellow',
-                        iconBackgroundColor: 'yellow',
+                        confirmButtonColor: 'green',
+                        iconBackgroundColor: 'green',
                         icon: (
                             <CogIcon
-                                className="h-6 w-6 text-yellow-600"
+                                className="h-6 w-6 text-green-600"
                                 aria-hidden="true"
                             />
                         ),
                         tabs: {
                             switchName: 'settings_tab',
                             colorMap: {
-                                Appearance: 'orange',
+                                Appearance: 'blue',
                                 Advanced: 'gray',
                             },
                             tabs: [
                                 {
-                                    name: 'Appearance',
+                                    name: 'Aparência',
                                     display: <PencilIcon className="w-5 h-5" />,
                                     options: [
                                         {
@@ -224,14 +224,14 @@ function TaskBar(props: TaskBarProps) {
                                         {
                                             name: 'compact',
                                             title: 'Modo Compacto',
-                                            description: `É um pouco mais feio, mas você pode ver mais na tela de uma só vez sem precisar rolar a tela.`,
+                                            description: `É um pouco mais feio, mas você pode ver mais na tela de uma só vez, sem precisar rolar a tela.`,
                                             buttonTextOn: 'Ativar',
                                             buttonTextOff: 'Desativado',
                                             saveToStorage: true,
                                         },
                                         {
                                             name: 'quarter_units',
-                                            title: 'Mostrar os creditos por Periodo',
+                                            title: 'Mostrar os Creditos por Periodo',
                                             description:
                                                 'Revele a contagem de creditos por periodo.',
                                             buttonTextOn: 'Ativar',
@@ -240,7 +240,7 @@ function TaskBar(props: TaskBarProps) {
                                         },
                                         {
                                             name: 'more_info',
-                                            title: 'Mostrar mais informações sobre as disciplinas',
+                                            title: 'Mostrar + Dados Sobre as Disciplinas',
                                             description: `Consulte os pré-requisitos e as áreas de distribuição nos itens da aula sem precisar clicar no botão de informações. As informações não serão exibidas se o modo compacto estiver ativado.`,
                                             buttonTextOn: 'Ativar',
                                             buttonTextOff: 'Desativado',
@@ -250,23 +250,23 @@ function TaskBar(props: TaskBarProps) {
                                             name: 'save_location_top',
                                             title: 'Localização do Botão de Salvar',
                                             description: `Ao editar uma projeção vinculada à sua conta, que possui alterações não salvas, o botão Salvar aparece no canto inferior direito da janela por padrão. Você pode movê-lo para o canto superior direito, se preferir.`,
-                                            buttonTextOn: 'Cima Diretia',
+                                            buttonTextOn: 'Cima Direita',
                                             buttonTextOff: 'Baixo Direita',
                                             saveToStorage: true,
                                         },
                                     ],
                                 },
                                 {
-                                    name: 'Advanced',
+                                    name: 'Avançado',
                                     display: (
                                         <DotsHorizontalIcon className="w-5 h-5" />
                                     ),
                                     options: [
                                         {
                                             name: 'clear_plan',
-                                            title: 'Clear plan',
-                                            description: `Clear all of your current plan data, which includes everything for each year and everything in My List. Make sure to save the current URL somewhere if you don't want to lose it.`,
-                                            buttonTextOn: 'Clear',
+                                            title: 'Limpar Projeção',
+                                            description: `Limpe todos os dados da sua projeção atual, o que inclui tudo para cada ano e tudo em Meus Favoritos. Certifique-se de salvar o URL atual em algum lugar se não quiser perdê-lo.`,
+                                            buttonTextOn: 'Limpar',
                                             requireConfirmation: true,
                                             singleAction: () => {
                                                 props.f2.clearData();
@@ -274,26 +274,26 @@ function TaskBar(props: TaskBarProps) {
                                         },
                                         {
                                             name: 'save_to_storage',
-                                            title: 'Remember most recent plan',
-                                            description: `If you visit this site without a full plan URL, your most recently modified plan will be loaded.`,
-                                            buttonTextOn: 'Enabled',
-                                            buttonTextOff: 'Disabled',
+                                            title: 'Lembrar do projeção mais recente',
+                                            description: `Se você visitar este site sem um URL de projeção completo, seu plano modificado mais recentemente será carregado.`,
+                                            buttonTextOn: 'Ativado',
+                                            buttonTextOff: 'Desativado',
                                             saveToStorage: true,
                                         },
                                         {
                                             name: 'reduced_motion',
-                                            title: 'Reduced motion',
-                                            description: `With reduced motion enabled, most transform and layout animations across the site will be disabled.`,
-                                            buttonTextOn: 'Enabled',
-                                            buttonTextOff: 'Disabled',
+                                            title: 'Reduced Motion',
+                                            description: `Com o movimento reduzido ativado, a maioria das animações de transformação e layout no site será desativada.`,
+                                            buttonTextOn: 'Ativado',
+                                            buttonTextOff: 'Desativado',
                                             saveToStorage: true,
                                         },
                                         {
                                             name: 'debug',
-                                            title: 'Debug mode',
-                                            description: `Log messages will print into your browser's console (verbose log level is required).`,
-                                            buttonTextOn: 'Enabled',
-                                            buttonTextOff: 'Disabled',
+                                            title: 'Modo Debug',
+                                            description: `As mensagens de log serão impressas no console do seu navegador (é necessário um nível de log detalhado).`,
+                                            buttonTextOn: 'Ativado',
+                                            buttonTextOff: 'Desativado',
                                             saveToStorage: true,
                                             bonusAction: (newSwitch) => {
                                                 if (newSwitch) {
