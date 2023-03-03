@@ -176,9 +176,9 @@ function TaskBar(props: TaskBarProps) {
                 display="Settings"
                 action={() => {
                     props.alert({
-                        title: 'Settings',
-                        message: `Customize your Plan Northwestern experience! These settings are saved in your browser and not in the URL.`,
-                        confirmButton: 'Close',
+                        title: 'Configurações',
+                        message: `Personalize sua experiência no SAPU! Essas configurações são salvas em seu navegador e não na URL.`,
+                        confirmButton: 'Fechar',
                         confirmButtonColor: 'yellow',
                         iconBackgroundColor: 'yellow',
                         icon: (
@@ -200,10 +200,10 @@ function TaskBar(props: TaskBarProps) {
                                     options: [
                                         {
                                             name: 'dark',
-                                            title: 'Dark mode',
-                                            description: `Become one with the night.`,
-                                            buttonTextOn: 'Enabled',
-                                            buttonTextOff: 'Disabled',
+                                            title: 'Modo Escuro',
+                                            description: `Torne-se o Cavaleiro das Trevas.`,
+                                            buttonTextOn: 'Ativado',
+                                            buttonTextOff: 'Desativado',
                                             saveToStorage: true,
                                             bonusAction: (newSwitch) => {
                                                 let color = newSwitch
@@ -223,35 +223,35 @@ function TaskBar(props: TaskBarProps) {
                                         },
                                         {
                                             name: 'compact',
-                                            title: 'Compact mode',
-                                            description: `It's a bit uglier I think, but you can view more on the screen at once without needing to scroll.`,
-                                            buttonTextOn: 'Enabled',
-                                            buttonTextOff: 'Disabled',
+                                            title: 'Modo Compacto',
+                                            description: `É um pouco mais feio, mas você pode ver mais na tela de uma só vez sem precisar rolar a tela.`,
+                                            buttonTextOn: 'Ativar',
+                                            buttonTextOff: 'Desativado',
                                             saveToStorage: true,
                                         },
                                         {
                                             name: 'quarter_units',
-                                            title: 'Show units per quarter',
+                                            title: 'Mostrar os creditos por Periodo',
                                             description:
-                                                'Reveal the unit count per quarter.',
-                                            buttonTextOn: 'Enabled',
-                                            buttonTextOff: 'Disabled',
+                                                'Revele a contagem de creditos por periodo.',
+                                            buttonTextOn: 'Ativar',
+                                            buttonTextOff: 'Desativado',
                                             saveToStorage: true,
                                         },
                                         {
                                             name: 'more_info',
-                                            title: 'Show more info on classes',
-                                            description: `See prerequisites and distribution areas on the class items without having to click on their info button. The info won't display if compact mode is enabled.`,
-                                            buttonTextOn: 'Enabled',
-                                            buttonTextOff: 'Disabled',
+                                            title: 'Mostrar mais informações sobre as disciplinas',
+                                            description: `Consulte os pré-requisitos e as áreas de distribuição nos itens da aula sem precisar clicar no botão de informações. As informações não serão exibidas se o modo compacto estiver ativado.`,
+                                            buttonTextOn: 'Ativar',
+                                            buttonTextOff: 'Desativado',
                                             saveToStorage: true,
                                         },
                                         {
                                             name: 'save_location_top',
-                                            title: 'Save button location',
-                                            description: `When editing a plan linked to your account that has unsaved changes, a save button appears at the bottom right of the window by default. You can move it to the top right if you'd prefer.`,
-                                            buttonTextOn: 'Top right',
-                                            buttonTextOff: 'Bottom right',
+                                            title: 'Localização do Botão de Salvar',
+                                            description: `Ao editar uma projeção vinculada à sua conta, que possui alterações não salvas, o botão Salvar aparece no canto inferior direito da janela por padrão. Você pode movê-lo para o canto superior direito, se preferir.`,
+                                            buttonTextOn: 'Cima Diretia',
+                                            buttonTextOff: 'Baixo Direita',
                                             saveToStorage: true,
                                         },
                                     ],
@@ -317,7 +317,7 @@ function TaskBar(props: TaskBarProps) {
                 colorMap={TabBarButtonColors}
             >
                 <TabBarButton
-                    name="Search"
+                    name="Procurar"
                     selected={props.switches.get.tab as string}
                     switches={props.switches}
                     switchName="tab"
@@ -326,7 +326,7 @@ function TaskBar(props: TaskBarProps) {
                     <SearchIcon className="w-5 h-5" />
                 </TabBarButton>
                 <TabBarButton
-                    name="My List"
+                    name="Meus Favoritos"
                     selected={props.switches.get.tab as string}
                     switches={props.switches}
                     switchName="tab"
@@ -335,7 +335,7 @@ function TaskBar(props: TaskBarProps) {
                     <BookmarkIcon className="w-5 h-5" />
                 </TabBarButton>
                 <TabBarButton
-                    name="Plans"
+                    name="Projeções"
                     selected={props.switches.get.tab as string}
                     switches={props.switches}
                     switchName="tab"
