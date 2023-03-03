@@ -73,26 +73,26 @@ function TaskBar(props: TaskBarProps) {
                         title: 'Teste Planning SAPU',
                         customSubtitle: (
                             <p className="text-md font-light text-gray-500 dark:text-gray-400">
-                                version {props.version} by{' '}
+                                version {props.version} Desenvolvido Originalmente por {' '}
                                 <a
                                     className="text-purple-500 dark:text-purple-300 opacity-100 hover:opacity-60 transition-all duration-150"
                                     href="https://dilanxd.com"
                                     target="_blank"
                                     rel="noreferrer"
                                 >
-                                    Desenvolvido Originalmente por Dilan N
+                                     Dilan N
                                 </a>
                             </p>
                         ),
                         message:
-                            'Uma maneira fácil e organizada de planejar suas aulas na Northwestern. Os dados ficam todos salvos na URL, então salve o link no seu plano para acessar depois ou compartilhe com amigos.',
+                            'Uma maneira fácil e organizada de planejar suas periodos na Universidade. Os dados ficam todos salvos na URL, então salve o link no seu plano para acessar depois ou compartilhe com amigos.',
                         confirmButton: 'Ver no GitHub',
-                        confirmButtonColor: 'blue',
+                        confirmButtonColor: 'purple',
                         cancelButton: 'Fechar',
-                        iconBackgroundColor: 'blue',
+                        iconBackgroundColor: 'purple',
                         icon: (
                             <InformationCircleIcon
-                                className="h-6 w-6 text-blue-600"
+                                className="h-6 w-6 text-purple-600"
                                 aria-hidden="true"
                             />
                         ),
@@ -149,7 +149,7 @@ function TaskBar(props: TaskBarProps) {
                 display="Compartilhar"
                 action={() => {
                     props.alert({
-                        title: 'Ready to share!',
+                        title: 'Pronto para Compartilhar!',
                         message:
                             'Todos os dados do seu plano são armazenados na URL. Quando você faz alterações em seu plano, a URL é atualizada para refletir essas alterações. Salve em algum lugar ou compartilhe com um amigo!',
                         confirmButton: 'Copiar para área de transferência',
@@ -172,18 +172,18 @@ function TaskBar(props: TaskBarProps) {
             />
             <MiniButton
                 icon={CogIcon}
-                color="green"
+                color="blue"
                 display="Configurações"
                 action={() => {
                     props.alert({
                         title: 'Configurações',
                         message: `Personalize sua experiência no SAPU! Essas configurações são salvas em seu navegador e não na URL.`,
                         confirmButton: 'Fechar',
-                        confirmButtonColor: 'green',
-                        iconBackgroundColor: 'green',
+                        confirmButtonColor: 'blue',
+                        iconBackgroundColor: 'blue',
                         icon: (
                             <CogIcon
-                                className="h-6 w-6 text-green-600"
+                                className="h-6 w-6 text-blue-600"
                                 aria-hidden="true"
                             />
                         ),
