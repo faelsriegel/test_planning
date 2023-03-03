@@ -85,7 +85,7 @@ class Search extends React.Component<SearchProps, SearchState> {
                         <MiniContentBlock
                             icon={<SearchIcon className="w-6 h-6" />}
                             title="Procurar"
-                            text="Use a barra de pesquisa para pesquisar todas as disciplinas e ver as informações detalhadas delas."
+                            text="Use a barra de pesquisa para localizar todas as disciplinas do seu curso e ver as informações detalhadas delas."
                         />
                         <MiniContentBlock
                             icon={<ArrowRightIcon className="w-6 h-6" />}
@@ -95,7 +95,7 @@ class Search extends React.Component<SearchProps, SearchState> {
                         <MiniContentBlock
                             icon={<CollectionIcon className="w-6 h-6" />}
                             title="Salvar"
-                            text="Crie facilmente uma conta para salvar várias peojeções e acessá-las de qualquer lugar."
+                            text="Crie facilmente uma conta para salvar várias projeções e acessá-las de qualquer lugar."
                         />
                         <MiniContentBlock
                             icon={<ExternalLinkIcon className="w-6 h-6" />}
@@ -178,7 +178,7 @@ class Search extends React.Component<SearchProps, SearchState> {
                             transition-all duration-150 text-black dark:text-white"
                         ref={this.searchFieldRef}
                         value={search}
-                        placeholder="Procurar pelas disciplinas..."
+                        placeholder="Procurar pelas Disciplinas..."
                         onChange={(event) => {
                             this.setState({ search: event.target.value });
                         }}
