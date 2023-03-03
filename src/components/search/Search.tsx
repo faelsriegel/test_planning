@@ -85,22 +85,22 @@ class Search extends React.Component<SearchProps, SearchState> {
                         <MiniContentBlock
                             icon={<SearchIcon className="w-6 h-6" />}
                             title="Procurar"
-                            text="Use a barra de pesquisa para pesquisar todos os cursos e ver informações detalhadas de cada um."
+                            text="Use a barra de pesquisa para pesquisar todas as disciplinas e ver as informações detalhadas delas."
                         />
                         <MiniContentBlock
                             icon={<ArrowRightIcon className="w-6 h-6" />}
                             title="Arrastar"
-                            text="Arraste os cursos desta área de pesquisa para o trimestre desejado. Como alternativa, você pode clicar no curso e selecionar o trimestre ao qual deseja adicioná-lo."
+                            text="Arraste as disiciplinas desta área de pesquisa para o periodo e ano desejado. Como alternativa, você pode clicar no curso e selecionar o periodo e ano ao qual deseja adicioná-lo."
                         />
                         <MiniContentBlock
                             icon={<CollectionIcon className="w-6 h-6" />}
                             title="Salvar"
-                            text="Crie facilmente uma conta para salvar vários planos e acessá-los de qualquer lugar."
+                            text="Crie facilmente uma conta para salvar várias peojeções e acessá-las de qualquer lugar."
                         />
                         <MiniContentBlock
                             icon={<ExternalLinkIcon className="w-6 h-6" />}
                             title="Compartilhar"
-                            text="A URL é atualizada conforme você modifica seu plano. Compartilhe-o com outras pessoas e elas terão uma cópia que poderão visualizar e editar."
+                            text="A URL é atualizada conforme você modifica a sua projeção. Compartilhe-o com outras pessoas e elas terão uma cópia que poderão visualizar e editar."
                         />
                     </div>,
                 ],
@@ -151,7 +151,7 @@ class Search extends React.Component<SearchProps, SearchState> {
                 <MiniContentBlock
                     icon={<DotsHorizontalIcon className="w-6 h-6" />}
                     title={`and ${results.limitExceeded} more.`}
-                    text="Há muitos resultados para exibir. Você precisará restringir sua pesquisa para obter mais."
+                    text="Há muitos resultados para exibir. Você precisará restringir sua pesquisa para obter algum resultado valido."
                     key="too-many"
                 />
             );
@@ -259,8 +259,8 @@ class Search extends React.Component<SearchProps, SearchState> {
                         }}
                     >
                         {bookmarks.noCredit.has(current)
-                            ? 'Remove from bookmarks'
-                            : 'Add to bookmarks'}
+                            ? 'Remover dos favoritos'
+                            : 'Add aos favoritos'}
                     </button>
                     <button
                         className="block mx-auto bg-indigo-800 dark:bg-indigo-400 text-white font-medium w-4/5 p-0.5 my-2 opacity-100 hover:opacity-60
@@ -275,8 +275,8 @@ class Search extends React.Component<SearchProps, SearchState> {
                         }}
                     >
                         {bookmarks.forCredit.has(current)
-                            ? 'Remove for credit'
-                            : 'Add for credit'}
+                            ? 'Remover dos creditos'
+                            : 'Add para os creditos'}
                     </button>
                 </div>
             );
