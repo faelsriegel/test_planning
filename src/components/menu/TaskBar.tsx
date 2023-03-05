@@ -73,15 +73,7 @@ function TaskBar(props: TaskBarProps) {
                         title: 'Teste Planning SAPU',
                         customSubtitle: (
                             <p className="text-md font-light text-gray-500 dark:text-gray-400">
-                                version {props.version} Desenvolvido Originalmente por {' '}
-                                <a
-                                    className="text-purple-500 dark:text-purple-300 opacity-100 hover:opacity-60 transition-all duration-150"
-                                    href="https://dilanxd.com"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                >
-                                     Dilan N
-                                </a>
+                                version {props.version}
                             </p>
                         ),
                         message:
