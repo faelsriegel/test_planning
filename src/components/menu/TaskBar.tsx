@@ -309,7 +309,7 @@ function TaskBar(props: TaskBarProps) {
                 colorMap={TabBarButtonColors}
             >
                 <TabBarButton
-                    name="Procurar"
+                    name="Search"
                     selected={props.switches.get.tab as string}
                     switches={props.switches}
                     switchName="tab"
@@ -318,7 +318,7 @@ function TaskBar(props: TaskBarProps) {
                     <SearchIcon className="w-5 h-5" />
                 </TabBarButton>
                  <TabBarButton
-                    name="Meus Favoritos"
+                    name="My List"
                     selected={props.switches.get.tab as string}
                     switches={props.switches}
                     switchName="tab"
@@ -327,7 +327,7 @@ function TaskBar(props: TaskBarProps) {
                     <BookmarkIcon className="w-5 h-5" />
                 </TabBarButton>
                 <TabBarButton
-                    name="Projeções"
+                    name="Plans"
                     selected={props.switches.get.tab as string}
                     switches={props.switches}
                     switchName="tab"
