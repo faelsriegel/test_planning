@@ -24,7 +24,11 @@ let Utility = {
             notifications: true,
             settings_tab: 'Appearance',
         };
-        let keys = Object.keys(localStorage);
+        // let keys = Object.keys(localStorage);
+        let keys = [];
+            if (typeof window !== 'undefined') {
+                keys = Object.keys(localStorage);
+        }
         for (let i = 0; i < keys.length; i++) {
             if (keys[i].startsWith('switch_')) {
                 let store = localStorage.getItem(keys[i]);
@@ -101,25 +105,25 @@ let Utility = {
     convertYear: (num: number) => {
         switch (num) {
             case 0:
-                return 'PRIMEIRO ANO';
+                return '2023';
             case 1:
-                return 'SEGUNDO ANO';
+                return '2024';
             case 2:
-                return 'TERCEIRO ANO';
+                return '2025';
             case 3:
-                return 'QUARTO ANO';
+                return '2026';
             case 4:
-                return 'QUINTO ANO';
+                return '2027';
             case 5:
-                return 'SEXTO ANO';
+                return '2028';
             case 6:
-                return 'SETIMO ANO';
+                return '2029';
             case 7:
-                return 'OITAVO ANO';
+                return '2030';
             case 8:
-                return 'NONO ANO';
+                return '2031';
             case 9:
-                return 'DECIMO ANO';
+                return '2032';
             default:
                 return 'AAH MUITOS ANOS NÃOOO';
         }
@@ -143,11 +147,11 @@ let Utility = {
     prereqColor: (num: number) => {
         switch (num) {
             case 0:
-                return 'red';
+                return 'green';
             case 1:
                 return 'blue';
             case 2:
-                return 'green';
+                return 'orange';
             case 3:
                 return 'yellow';
             case 4:
@@ -163,9 +167,9 @@ let Utility = {
             message: `Isso não era para acontecer. Um erro inesperado ocorreu.
             Confira o status do site para ver se o que você está enfrentando é um problema conhecido.
             Se não for, por favor me avise. Certifique-se de observar a mensagem de erro abaixo.`,
-            confirmButton: 'View status',
+            confirmButton: 'Veja o Status',
             confirmButtonColor: 'red',
-            cancelButton: 'Close',
+            cancelButton: 'Fechar',
             iconBackgroundColor: 'red',
             icon: (
                 <ExclamationIcon
@@ -175,7 +179,7 @@ let Utility = {
             ),
             textView: error + ' - ' + from,
             action: () => {
-                window.open('https://status.dilanxd.com', '_blank');
+                window.open('https://status.faelsriegel.com', '_blank');
             },
         };
     },
