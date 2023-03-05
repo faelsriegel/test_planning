@@ -24,7 +24,7 @@ let Utility = {
             notifications: true,
             settings_tab: 'Appearance',
         };
-        // let keys = Object.keys(localStorage);
+        let keys = Object.keys(localStorage);
         let keys = [];
             if (typeof window !== 'undefined') {
                 keys = Object.keys(localStorage);
