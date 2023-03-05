@@ -130,7 +130,7 @@ class Year extends React.Component<YearProps, YearState> {
                                 className={`hidden group-hover:block absolute -bottom-10 right-0 p-1 w-48 border-2 rounded-md
                                     bg-red-50 dark:bg-gray-800 border-red-500 text-red-500 dark:text-red-300 text-sm font-medium`}
                             >
-                               Excluir o Ultimo Periodo
+                               Voltar ao Padrão
                             </div>
                         </button>
                         <button
@@ -151,8 +151,8 @@ class Year extends React.Component<YearProps, YearState> {
                                     bg-fuchsia-50 dark:bg-gray-800 border-fuchsia-500 text-fuchsia-500 dark:text-fuchsia-300 text-sm font-medium`}
                             >
                                 {this.state.hidden
-                                    ? "Mostrar esse ano do curso"
-                                    : "Ocultar esse ano do curso"}
+                                    ? "Mostrar"
+                                    : "Ocultar"}
                             </div>
                         </button>
                     </div>
