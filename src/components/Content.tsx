@@ -63,9 +63,9 @@ class Content extends React.Component<ContentProps> {
                             dark:bg-gray-700 dark:hover:bg-gray-600 dark:hover:text-gray-300 transition-all duration-150 rounded-lg shadow-sm"
                             onClick={() => {
                                 this.props.alert({
-                                    title: 'Adicionar um mais um ano?',
+                                    title: 'Adicionar mais um Ano ao seu Curso?',
                                     message:
-                                        'Isso adicionará mais um ano ao seu planejamento. Você pode removê-lo removendo todas as aulas daquele ano e atualizando a página.',
+                                        'Isso adicionará mais um ano ao seu curso e planejamento. Você pode removê-lo removendo todas as aulas daquele ano e atualizando a página.',
                                     confirmButton: 'Add Ano',
                                     confirmButtonColor: 'cyan',
                                     cancelButton: 'Fechar',
