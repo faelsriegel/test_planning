@@ -105,25 +105,25 @@ let Utility = {
     convertYear: (num: number) => {
         switch (num) {
             case 0:
-                return '2023';
+                return 'PRIMEIRO ANO';
             case 1:
-                return '2024';
+                return 'SEGUNDO ANO';
             case 2:
-                return '2025';
+                return 'TERCEIRO ANO';
             case 3:
-                return '2026';
+                return 'QUARTO ANO';
             case 4:
-                return '2027';
+                return 'QUINTO ANO';
             case 5:
-                return '2028';
+                return 'SEXTO ANO';
             case 6:
-                return '2029';
+                return 'SETIMO ANO';
             case 7:
-                return '2030';
+                return 'OITAVO ANO';
             case 8:
-                return '2031';
+                return 'NONO ANO';
             case 9:
-                return '2032';
+                return 'DECIMO ANO';
             default:
                 return 'AAH MUITOS ANOS NÃOOO';
         }
@@ -147,11 +147,11 @@ let Utility = {
     prereqColor: (num: number) => {
         switch (num) {
             case 0:
-                return 'green';
+                return 'red';
             case 1:
                 return 'blue';
             case 2:
-                return 'orange';
+                return 'green';
             case 3:
                 return 'yellow';
             case 4:
@@ -167,9 +167,9 @@ let Utility = {
             message: `Isso não era para acontecer. Um erro inesperado ocorreu.
             Confira o status do site para ver se o que você está enfrentando é um problema conhecido.
             Se não for, por favor me avise. Certifique-se de observar a mensagem de erro abaixo.`,
-            confirmButton: 'Veja o Status',
+            confirmButton: 'View status',
             confirmButtonColor: 'red',
-            cancelButton: 'Fechar',
+            cancelButton: 'Close',
             iconBackgroundColor: 'red',
             icon: (
                 <ExclamationIcon
@@ -179,7 +179,7 @@ let Utility = {
             ),
             textView: error + ' - ' + from,
             action: () => {
-                window.open('https://status.faelsriegel.com', '_blank');
+                window.open('https://status.dilanxd.com', '_blank');
             },
         };
     },
