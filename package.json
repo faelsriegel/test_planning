@@ -1,8 +1,7 @@
 {
-  "name": "plan-northwestern",
-  "version": "1.2.0-beta3",
+  "name": "sapu",
+  "version": "1.0.0",
   "private": true,
-  "homepage": "https://plan-nu.com",
   "dependencies": {
     "@headlessui/react": "^1.6.4",
     "@heroicons/react": "^1.0.6",
